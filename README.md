@@ -1,7 +1,7 @@
 # Deconv-Resnet-Localisation-heatmaps
 Playing around with putting a deconv layer on top of a resnet. Code available upon request.
 
-![title](Figures/Deconv Architecture2.png)
+![title](Figures/DeconvArchitecture2.png)
 
 # Introduction
 
@@ -15,11 +15,11 @@ I wanted to see how useful this density map was for my images, did I even need i
 
 1. X,Y prediction: The first one modifies the final FC layer of a resnet to a length of 2 nodes, the first one for the x coordinate, the second one for the y. When the loss is calculated for this architecture, it is calculated between true x,y coordinates and the predicted x,y coordinates.
 
-![title](Figures/X,Y\ architecture.png)
+![title](Figures/X,Yarchitecture.png)
 
 2. Heatmap prediction with Deconv layer: This network modifies the final FC layer to 2500 nodes and then puts a deconv layer after it. This deconv layer helps generate the heatmaps of size 224*224 (i.e. the size of our input images). When calculating loss here, it is calculated between a truth heatmap that we supply and the predicted heatmap. This is the model that resembles in its architecture to DLC. The idea is similar to the AE image reconstruction that we did in our class, but here instead of reconstructing the image, the model is required to construct a probability density map of where it thinks the center of the biggest rectangle might lie. 
 
-![title](Figures/Deconv\ Architecture2.png)
+![title](Figures/DeconvArchitecture2.png)
 
 #### Loss Measure
 
@@ -149,7 +149,7 @@ Also, the data supplied to the heat-map model architecture isn't a true probabil
 
 ### Learning Rates
 
-![Learning Rates](Figures/Learning Rates_0.jpg)
+![Learning Rates](Figures/LearningRates_0.jpg)
 
 ### Model Depth
 
@@ -163,7 +163,7 @@ Also, the data supplied to the heat-map model architecture isn't a true probabil
 
 ### Learning Rates
 
-![Learning Rates](Figures/Learning Rates_1.jpg)
+![Learning Rates](Figures/LearningRates_1.jpg)
 
 ### Resnet Depth
 
