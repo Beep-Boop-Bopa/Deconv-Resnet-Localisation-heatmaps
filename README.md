@@ -1,5 +1,5 @@
 # Deconv-Resnet-Localisation-heatmaps
-Playing around with putting a deconv layer on top of a resnet. Code available upon request.
+Playing around with putting a deconv layer on top of a resnet. Code available upon request. In this project, we are trying to find the center of the biggest rectangles in a given image.
 
 ![title](Figures/Simple_Epochs_dev.png)
 
