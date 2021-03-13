@@ -1,6 +1,8 @@
 # Deconv-Resnet-Localisation-heatmaps
 Playing around with putting a deconv layer on top of a resnet. Code available upon request.
 
+![title](Figures/Deconv Architecture2.png)
+
 # Introduction
 
 This project was inspired by deepLabCut (DLC) - an animal pose estimation framework. In this research paper, the authors attempt to predict locations for various animal body parts in a given frame. In my project, there are images with various number of rectangles in them and the deep learning models attempt to find the center of the largest rectangle in a given image.
