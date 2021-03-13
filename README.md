@@ -1,7 +1,7 @@
 # Deconv-Resnet-Localisation-heatmaps
 Playing around with putting a deconv layer on top of a resnet. Code available upon request.
 
-![title](Figures/Deconv \Architecture2.png)
+![title]('Figures/Deconv Architecture2.png')
 
 # Introduction
 
